@@ -91,120 +91,32 @@ AI là một ngành khoa học, giống như toán học hay sinh học. Điều
 
 
 
+
 _____________________ 12 _____________________
 
 2. Lĩnh vực liên quan
 
+Bao gồm: Học máy, Khoa học dữ liệu, Học sâu, Robotics...
+
++ Học máy là các hệ thống cải thiện hiệu suất của chúng trong một nhiệm vụ nhất định với ngày càng nhiều kinh nghiệm hoặc dữ liệu.
+
++ "Độ sâu" của học sâu đề cập đến sự phức tạp của một mô hình toán học
+
++ Khoa học dữ liệu là một thuật ngữ chung bao gồm học máy, thống kê và một số khía cạnh của KHMT bao gồm thuật toán, lưu trữ dữ liệu và phát triển ứng dụng web. Khoa học dữ liệu cũng là một ngành thực tế đòi hỏi sự hiểu biết về lĩnh vực mà nó được áp dụng
+
 _____________________ 13 _____________________
 
++ Robotics có nghĩa là xây dựng và lập trình robot để chúng có thể hoạt động trong các tình huống phức tạp trong thế giới thực. Theo một cách nào đó, người máy là thách thức cuối cùng của AI vì nó đòi hỏi sự kết hợp của hầu như tất cả các lĩnh vực của AI. Ví dụ:
+	+ Thị giác máy tính và nhận dạng giọng nói để cảm nhận môi trường
+	+ Xử lý ngôn ngữ tự nhiên, truy xuất thông tin và suy luận trong điều kiện không chắc chắn để xử lý hướng dẫn và dự đoán hậu quả của các hành động tiềm ẩn
+	+ Mô hình nhận thức và điện toán tình cảm (affective computing - hệ thống phản ứng với các biểu hiện cảm xúc của con người hoặc bắt chước cảm xúc) để tương tác và làm việc cùng với con người
 
+Nhiều vấn đề về trí tuệ nhân tạo liên quan đến rô-bốt được tiếp cận tốt nhất bằng học máy, điều này làm cho học máy trở thành một nhánh trung tâm của trí tuệ nhân tạo dành cho rô-bốt.
 
-_____________________ 14 _____________________
+Tóm lại, rô-bốt là một cỗ máy bao gồm các cảm biến (cảm nhận môi trường) và bộ truyền động (tác động lên môi trường) có thể được lập trình để thực hiện các chuỗi hành động.
 
+Có thể nói, bất kỳ loại phương tiện nào có ít nhất một số mức độ tự chủ và bao gồm các cảm biến và bộ truyền động cũng được coi là robot.
 
+Mặt khác, các giải pháp dựa trên phần mềm như chatbot dịch vụ khách hàng, ngay cả khi chúng đôi khi được gọi là “rô-bốt phần mềm”, không được tính là rô-bốt (thực).
 
-_____________________ 15 _____________________
-
-
-
-_____________________ 16 _____________________
-
-
-
-_____________________ 17 _____________________
-
-
-
-_____________________ 18 _____________________
-
-
-
-_____________________ 19 _____________________
-
-
-
-_____________________ 20 _____________________
-
-
-
-_____________________ 21 _____________________
-
-
-
-_____________________ 22 _____________________
-
-
-
-_____________________ 23 _____________________
-
-
-
-_____________________ 24 _____________________
-
-
-
-_____________________ 25 _____________________
-
-
-
-_____________________ 26 _____________________
-
-
-
-_____________________ 27 _____________________
-
-
-
-_____________________ 28 _____________________
-
-
-
-_____________________ 29 _____________________
-
-
-
-_____________________ 30 _____________________
-
-
-
-_____________________ 31 _____________________
-
-
-
-_____________________ 32 _____________________
-
-
-
-_____________________ 33 _____________________
-
-
-
-_____________________ 34 _____________________
-
-
-
-_____________________ 35 _____________________
-
-
-
-_____________________ 36 _____________________
-
-
-
-_____________________ 37 _____________________
-
-
-
-_____________________ 38 _____________________
-
-
-
-_____________________ 39 _____________________
-
-
-
-_____________________ 40 _____________________
-
-
-
-
+_____________________ End _____________________
