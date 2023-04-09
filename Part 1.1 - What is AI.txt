@@ -1,0 +1,210 @@
+
+_____________________ 1 _____________________
+
+1. Nên định nghĩa AI thế nào?
+- Tùy theo cách nhìn của mỗi người:
++ AI có thể là dạng sống nhân tạo có trí thông minh
++ AI có thể là mọi công nghệ xử lý dữ liệu
+ 
+_____________________ 2 _____________________
+
+- Vài ứng dụng của AI:
++ Ứng dụng 1. Xe tự lái
++ Ứng dụng 2. Đề xuất nội dung
++ Ứng dụng 3. Xử lý ảnh và video
+
+_____________________ 3 _____________________
+
+Ứng dụng 1. Xe tự lái
+- Các kỹ thuật: 
++Tìm kiếm
++ Lập kế hoạch (để tìm đường đi phù hợp)
++ Thị giác máy tính (để xác định chướng ngại vật, đèn tín hiệu,... và đưa ra quyết định đối phó)
+
+_____________________ 4 _____________________
+
+Ứng dụng 2. Đề xuất nội dung
+Đề xuất nội dung phù hợp với người dùng trên các website, MXH...
+
+_____________________ 5 _____________________
+
+Ứng dụng 3. Xử lý ảnh và video
+- Ứng dụng:
+Được sử dụng trong nhiều ứng dụng của chính phủ, doanh nghiệp
++ Tự động gắn thẻ trên MXH
++ Kiểm soát hộ chiếu
++ ...
++ Điều chỉnh ảnh dưới phong cách của các họa sĩ
++ Tạo ra các nhân vật giống trong phim
+
+- Điểm hạn chế: Có thể tạo ra các ảnh, video giả mạo
+
+_____________________ 6 _____________________
+
+- Tại sao khái niệm AI mơ hồ với mọi người:
++ Lý do 1: Không có định nghĩa thống nhất chính thức
++ Lý do 2: Di sản của khoa học viễn tưởng
++ Lý do 3: Những gì có vẻ DỄ DÀNG thực sự KHÓ...
++ Lý do 4: Những gì có vẻ KHÓ thực sự DỄ DÀNG...
+
+_____________________ 7 _____________________
+
+Lý do 1: Không có định nghĩa thống nhất chính thức
+
+Ví dụ, 50 năm trước, các phương pháp tìm kiếm và lập kế hoạch tự động được coi là thuộc về lĩnh vực TTNT thì ngày nay các phương pháp như vậy được dạy cho mọi sinh viên IT. 
+Tương tự, một số phương pháp xử lý thông tin không chắc chắn đang được hiểu rõ đến mức chúng có thể sẽ sớm được chuyển từ AI sang thống kê hoặc xác suất.
+
+_____________________ 8 _____________________
+
+Lý do 2: Di sản của khoa học viễn tưởng
+
+_____________________ 9 _____________________
+
+Lý do 3: Nhận biết những gì có vẻ dễ dàng là điều thực sự khó...
+
+Khó biết nhiệm vụ nào dễ và nhiệm vụ nào khó
+Ví dụ, nhặt cái bút dưới đất lên là 1 nhiệm vụ mà chúng ta thấy rất dễ
+
+Tuy nhiên, trong thực tế thì thì: 
++ Bạn phải sử dụng mắt để quan sát xung quanh, tìm ra đâu là cái bút
++ Sau đó lập kế hoạch quỹ đạo cho bàn tay của bạn. chạm vào vật đó
++ Sau đó di chuyển bàn tay của bạn bằng cách co các cơ khác nhau theo trình tự và cố gắng bóp vật đó với một lực vừa đủ để giữ vật đó giữa các ngón tay của bạn.
+-> Vì vậy, đối với robot đây là việc khó
+
+_____________________ 10 _____________________
+
+Lý do 4: Nhận biết những gì có vẻ khó là điều thực sự dễ dàng...
+
+Ví dụ, chơi cờ vua có vẻ khó, đòi hỏi luyện tập nhiều
+Tuy nhiên, đối với máy tính sau khi được lập trình các quy tắc thì nó có thể tính toán được rất nhiều phép toán và chơi tốt khi được training
+
+Hoặc thành thạo Toán học có thể là việc khó khăn
+Tuy vậy, máy tính có thể giải quyết thông qia các bộ quy tắc đơn giản
+
+_____________________ 11 _____________________
+
+- Một số lưu ý:
++ AI không phải là danh từ đếm được
+AI là một ngành khoa học, giống như toán học hay sinh học. Điều này có nghĩa là AI là một tập hợp các khái niệm, vấn đề và phương pháp để giải quyết chúng
++ Không thể so sánh 2 AI với nhau
++ Nếu bạn muốn nói chuyện chuyên nghiệp, hãy tránh nói "AI" mà thay vào đó hãy nói "an AI method"
+
+
+
+_____________________ 12 _____________________
+
+2. Lĩnh vực liên quan
+
+_____________________ 13 _____________________
+
+
+
+_____________________ 14 _____________________
+
+
+
+_____________________ 15 _____________________
+
+
+
+_____________________ 16 _____________________
+
+
+
+_____________________ 17 _____________________
+
+
+
+_____________________ 18 _____________________
+
+
+
+_____________________ 19 _____________________
+
+
+
+_____________________ 20 _____________________
+
+
+
+_____________________ 21 _____________________
+
+
+
+_____________________ 22 _____________________
+
+
+
+_____________________ 23 _____________________
+
+
+
+_____________________ 24 _____________________
+
+
+
+_____________________ 25 _____________________
+
+
+
+_____________________ 26 _____________________
+
+
+
+_____________________ 27 _____________________
+
+
+
+_____________________ 28 _____________________
+
+
+
+_____________________ 29 _____________________
+
+
+
+_____________________ 30 _____________________
+
+
+
+_____________________ 31 _____________________
+
+
+
+_____________________ 32 _____________________
+
+
+
+_____________________ 33 _____________________
+
+
+
+_____________________ 34 _____________________
+
+
+
+_____________________ 35 _____________________
+
+
+
+_____________________ 36 _____________________
+
+
+
+_____________________ 37 _____________________
+
+
+
+_____________________ 38 _____________________
+
+
+
+_____________________ 39 _____________________
+
+
+
+_____________________ 40 _____________________
+
+
+
+
