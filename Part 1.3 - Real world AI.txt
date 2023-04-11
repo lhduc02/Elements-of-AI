@@ -1,162 +1,105 @@
 
 _____________________ 1 _____________________
 
+1. Tỷ lệ cược và xác suất (Odds and probability)
 
+Trong thế giới thực, mọi thứ hiếm khi rõ ràng, thông tin hiếm khi hoàn hảo
+
+Lấy ví dụ về ô tô tự lái, bạn có thể đặt mục tiêu đi từ A đến B một cách hiệu quả và an toàn, tuân thủ mọi luật lệ.
+Nhưng điều gì sẽ xảy ra nếu tình trạng giao thông trở nên tồi tệ hơn dự kiến, có thể do một tai nạn phía trước? Thời tiết xấu đột ngột?
+Các sự kiện ngẫu nhiên như một quả bóng nảy trên đường phố hay một mảnh rác bay thẳng vào camera của ô tô?
+
+
+Một chiếc ô tô tự lái cần sử dụng nhiều loại cảm biến, bao gồm cả cảm biến giống như sonar và camera, để phát hiện vị trí của nó và những gì xung quanh nó.
+Những cảm biến này không bao giờ hoàn hảo vì dữ liệu từ các cảm biến luôn bao gồm một số lỗi và không chính xác được gọi là “nhiễu”.
+Ví dụ, một cảm biến cho biết con đường phía trước rẽ trái, nhưng một cảm biến khác lại chỉ ra hướng ngược lại.
 
 _____________________ 2 _____________________
 
+Xác suất:
 
+Lịch sử của AI đã chứng kiến ​​nhiều mô hình khác nhau để xử lý thông tin không chắc chắn và không chính xác. 
+Ví dụ, Logic mờ
+Logic mờ ĐÃ TỪNG là cách tiếp cận tốt nhất để xử lý thông tin không chắc chắn và không chính xác
+Được sử dụng trong nhiều ứng dụng của khách hàng như máy giặt, nơi máy có thể phát hiện độ bẩn (một vấn đề về mức độ, không chỉ bẩn hay sạch) và điều chỉnh chương trình cho phù hợp
+
+Tuy nhiên, xác suất lại là cách tiếp cận tốt nhất để lập luận trong điều kiện không chắc chắn và hầu hết tất cả các ứng dụng AI hiện tại đều dựa trên xác suất, ít nhất ở một mức độ nào đó.
 
 _____________________ 3 _____________________
 
+Bài học trọng tâm về xác suất:
 
+- Là khả năng nghĩ về sự không chắc chắn như một thứ có thể được định lượng ít nhất về mặt nguyên tắc.
+Có nghĩa là chúng ta có thể nói về sự không chắc chắn như thể nó là một con số - các con số có thể được so sánh (VD: điều này có khả năng xảy ra hơn điều kia), và chúng thường có thể đo lường được.
+
+Bằng cách thu thập dữ liệu một cách có hệ thống, có thể đánh giá một cách nghiêm túc các tuyên bố xác suất và các con số đôi khi có thể được xác định là đúng hoặc sai.
+Nói cách khác, bài học quan trọng là sự không chắc chắn không nằm ngoài phạm vi suy nghĩ và thảo luận hợp lý, và xác suất cung cấp một cách có hệ thống để làm điều đó.
 
 _____________________ 4 _____________________
 
+Tỷ lệ cược:
+
+Ví dụ:
+3:1 (xác suất thắng là 1/4)
+1:4 (tỉ lệ 1 thắng 4 thua tức là trung bình, phải chơi 5 lần mới có 1 lần thắng),...
 
 
 _____________________ 5 _____________________
 
+2. Quy tắc Bayes (công thức Bayes)
 
+Tỷ lệ cược trước và sau:
+Quy tắc Bayes có thể được thể hiện dưới nhiều hình thức. Đơn giản nhất là về tỷ lệ cược.
+Ý tưởng là lấy cơ hội cho một điều gì đó xảy ra (chống lại việc nó không xảy ra), mà chúng ta sẽ gọi là cơ hội trước. Từ "trước" đề cập đến tỷ lệ cược, trước khi có được một số thông tin mới có thể có liên quan. 
+Mục đích của công thức là cập nhật tỷ lệ cược trước, khi có thông tin mới, để có được tỷ lệ cược sau
+
+Ví dụ: tỉ lệ phần trăm chiến thắng trong 1 trận đấu thay đổi khi có bàn thắng được ghi
 
 _____________________ 6 _____________________
 
-
+Tỷ lệ khả năng xảy ra = A / B
+Với:
+A là: xác suất quan sát được trong trường hợp xảy ra sự kiện quan tâm (VD XS mưa)
+B là: xác suất quan sát trong trường hợp không có sự kiện nào (VD XS không mưa)
 
 _____________________ 7 _____________________
 
-
+Quy tắc Bayes chuyển đổi tỷ lệ cược trước thành tỷ lệ cược sau như sau:
+tỷ lệ cược sau = tỷ lệ khả năng × tỷ lệ cược trước
 
 _____________________ 8 _____________________
 
-
+Ví dụ:
+Tỷ lệ cược trước mô tả tình huống trước khi nhận được kết quả kiểm tra. Vì cứ 100 phụ nữ thì có 5 người bị ung thư vú, nên trung bình cứ 95 phụ nữ không bị ung thư vú thì có 5 phụ nữ bị ung thư vú, và do đó, tỷ lệ cược trước là 5:95. 
+Tỷ lệ khả năng là xác suất có kết quả dương tính trong trường hợp ung thư chia cho xác suất có kết quả dương tính trong trường hợp không có ung thư. Với những con số trên, đây là kết quả của 80/100 chia cho 10/100, tức là 8.
+Quy tắc Bayes hiện đưa ra tỷ lệ mắc bệnh ung thư vú sau khi có kết quả xét nghiệm dương tính: tỷ lệ mắc sau = 8 × 5:95 = 40:95
+Điều này cho kết quả 40 trên 135, hoặc khoảng 30%. Con số này cao hơn nhiều so với tỷ lệ mắc ung thư vú, 5 trên 100, hay 5%, nhưng vẫn có khả năng là người đó không bị ung thư.
+Nếu so sánh giải pháp với câu trả lời trực quan của mình, chúng có xu hướng khá khác nhau đối với hầu hết mọi người. Điều này cho thấy trực giác kém phù hợp như thế nào để xử lý thông tin không chắc chắn và mâu thuẫn.
 
 _____________________ 9 _____________________
 
+3. Phân loại Naive Bayes
 
+Một trong những ứng dụng hữu ích nhất của quy tắc Bayes là cái gọi là bộ phân loại Naive Bayes
+
+Trình phân loại Bayes là một kỹ thuật học máy có thể được sử dụng để phân loại các đối tượng như tài liệu văn bản thành hai hoặc nhiều lớp.
+Bộ phân loại được đào tạo bằng cách phân tích một tập hợp dữ liệu đào tạo, trong đó các lớp chính xác được đưa ra.
+Trình phân loại Bayes có thể được sử dụng để xác định xác suất của các lớp cho một số quan sát khác nhau.
+Giả định trong mô hình là các biến đặc trưng là độc lập có điều kiện đối với lớp.
 
 _____________________ 10 _____________________
 
-
-
-_____________________ 11 _____________________
-
-
-
-_____________________ 12 _____________________
-
-
-
-_____________________ 13 _____________________
-
-
-
-_____________________ 14 _____________________
-
-
-
-_____________________ 15 _____________________
-
-
-
-_____________________ 16 _____________________
-
-
-
-_____________________ 17 _____________________
-
-
-
-_____________________ 18 _____________________
-
-
-
-_____________________ 19 _____________________
-
-
-
-_____________________ 20 _____________________
-
-
-
-_____________________ 21 _____________________
-
-
-
-_____________________ 22 _____________________
-
-
-
-_____________________ 23 _____________________
-
-
-
-_____________________ 24 _____________________
-
-
-
-_____________________ 25 _____________________
-
-
-
-_____________________ 26 _____________________
-
-
-
-_____________________ 27 _____________________
-
-
-
-_____________________ 28 _____________________
-
-
-
-_____________________ 29 _____________________
-
-
-
-_____________________ 30 _____________________
-
-
-
-_____________________ 31 _____________________
-
-
-
-_____________________ 32 _____________________
-
-
-
-_____________________ 33 _____________________
-
-
-
-_____________________ 34 _____________________
-
-
-
-_____________________ 35 _____________________
-
-
-
-_____________________ 36 _____________________
-
-
-
-_____________________ 37 _____________________
-
-
-
-_____________________ 38 _____________________
-
-
-
-_____________________ 39 _____________________
-
-
-
-_____________________ 40 _____________________
-
-
-
+Ví dụ: Bộ lọc thư rác:
+Các từ trong thông báo tương ứng với các biến đặc trưng, ​​do đó số lượng biến đặc trưng trong mô hình được xác định bởi độ dài của thông báo.
+
+Tại sao gọi nó là "ngây thơ" - naive?:
+Ý tưởng là nghĩ về các từ được tạo ra bằng cách chọn từ này đến từ khác để việc lựa chọn từ chỉ phụ thuộc vào việc thư là thư rác hay hợp lệ.
+Nó không có sự phụ thuộc giữa các từ liền kề và thứ tự của các từ không có ý nghĩa. Trên thực tế, đây là lý do tại sao phương pháp này được gọi là ngây thơ.
+
+Vì mô hình dựa trên ý tưởng rằng các từ có thể được xử lý độc lập
+Nên có thể xác định các từ cụ thể biểu thị
+thư rác ("free", "ưu đãi cuối cùng", "sale off", "nhấp vào quảng cáo") hoặc
+hợp lệ ("cuộc họp", "thuật toán").
+
+_____________________ End _____________________
 

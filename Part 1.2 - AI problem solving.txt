@@ -1,162 +1,48 @@
+Các giải thuật tìm kiếm có thể được sử dụng để giải quyết các nhiệm vụ mà hầu hết chúng ta thừa nhận là cần đến trí thông minh như điều hướng hoặc chơi cờ.
+
+1. Tìm kiếm và giải quyết vấn đề
+2. Tìm kiếm và games
 
 _____________________ 1 _____________________
 
+1. Tìm kiếm và giải quyết vấn đề
++ Có nhiều cách để giải quyết một vấn đề
++ Các kỹ thuật tìm kiếm khác nhau có thể dẫn đến các giải pháp khác nhau
 
+- Giai đoạn đầu tiên của quá trình giải quyết vấn đề: xác định các lựa chọn và hậu quả của chúng. Điều này thường không hề tầm thường và có thể đòi hỏi phải suy nghĩ cẩn thận
+Sau khi điều này được thực hiện, chúng ta có thể tìm kiếm một chuỗi các hành động dẫn từ trạng thái ban đầu đến mục tiêu.
 
 _____________________ 2 _____________________
 
-
+- Trong chương này, chúng ta sẽ thảo luận về hai loại vấn đề:
++ Tìm kiếm và lập kế hoạch trong môi trường tĩnh chỉ với một "tác tử"
++ Trò chơi có hai "tác tử" thi đấu với nhau
 
 _____________________ 3 _____________________
 
+- Không gian trạng thái (The state space): là tập hợp các tình huống có thể xảy ra.
+Nếu nhiệm vụ là điều hướng từ địa điểm A đến địa điểm B, thì không gian trạng thái có thể là tập hợp các vị trí được xác định bởi tọa độ (x,y) của chúng mà có thể đạt được từ điểm bắt đầu A. Hoặc chúng ta có thể sử dụng một tập hợp các vị trí bị ràng buộc , ví dụ, các địa chỉ đường phố khác nhau để số lượng trạng thái có thể bị hạn chế
 
+- Chuyển tiếp (Transitions): là có thể di chuyển giữa trạng thái này sang trạng thái khác
+Chỉ nên tính các chuyển đổi trực tiếp có thể được thực hiện bằng một hành động duy nhất
+Một chuỗi nhiều chuyển đổi
+Ví dụ: từ A đến C là một đường dẫn chứ không phải là một chuyển đổi.
+
+- Chi phí (Costs): ví dụ thời gian, khoảng cách
 
 _____________________ 4 _____________________
 
-
-
-_____________________ 5 _____________________
-
-
-
-_____________________ 6 _____________________
-
-
-
-_____________________ 7 _____________________
-
-
-
-_____________________ 8 _____________________
-
-
-
-_____________________ 9 _____________________
-
-
-
-_____________________ 10 _____________________
-
-
-
-_____________________ 11 _____________________
-
-
-
-_____________________ 12 _____________________
-
-
-
-_____________________ 13 _____________________
-
-
-
-_____________________ 14 _____________________
-
-
-
-_____________________ 15 _____________________
-
-
-
-_____________________ 16 _____________________
-
-
-
-_____________________ 17 _____________________
-
-
-
-_____________________ 18 _____________________
-
-
-
-_____________________ 19 _____________________
-
-
-
-_____________________ 20 _____________________
-
-
-
-_____________________ 21 _____________________
-
-
-
-_____________________ 22 _____________________
-
-
-
-_____________________ 23 _____________________
-
-
-
-_____________________ 24 _____________________
-
-
-
-_____________________ 25 _____________________
-
-
-
-_____________________ 26 _____________________
-
-
-
-_____________________ 27 _____________________
-
-
-
-_____________________ 28 _____________________
-
-
-
-_____________________ 29 _____________________
-
-
-
-_____________________ 30 _____________________
-
-
-
-_____________________ 31 _____________________
-
-
-
-_____________________ 32 _____________________
-
-
-
-_____________________ 33 _____________________
-
-
-
-_____________________ 34 _____________________
-
-
-
-_____________________ 35 _____________________
-
-
-
-_____________________ 36 _____________________
-
-
-
-_____________________ 37 _____________________
-
-
-
-_____________________ 38 _____________________
-
-
-
-_____________________ 39 _____________________
-
-
-
-_____________________ 40 _____________________
-
-
-
-
+2. Tìm kiếm và games
++ Trò chơi có tổng bằng không (zero-sum games) là một giả định mà cả hai người chơi đều chọn điều tốt nhất cho họ
+Và điều tốt nhất cho người này là điều tồi tệ nhất cho người kia
+
+- Kinh nghiệm tốt
+Ví dụ, các phương pháp phỏng đoán tốt cho cờ vua thường tính số lượng quân cờ có trọng số theo loại của chúng:
++ quân hậu thường được coi là có giá trị gấp hai lần quân xe
++ quân mã gấp ba lần quân tượng và gấp chín lần quân tốt
++ nhà vua có giá trị hơn tất cả những thứ khác cộng lại
+Hơn nữa, việc chiếm giữ các vị trí chiến lược quan trọng gần giữa bàn cờ được coi là một lợi thế và các phương pháp phỏng đoán gán giá trị cao hơn cho các vị trí đó.
+
+** Xem thêm thuật toán Minimax
+
+_____________________ End _____________________

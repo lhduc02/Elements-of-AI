@@ -1,39 +1,109 @@
+Học tập là yếu tố then chốt của trí thông minh.
+Điều này áp dụng cho cả trí thông minh tự nhiên và trí tuệ nhân tạo.
 
 _____________________ 1 _____________________
 
+1. Các loại máy học
 
++ Trong hầu hết các vấn đề học máy phổ biến, chính xác một giá trị lớp là đúng tại một thời điểm.
++ Không thể xảy ra trường hợp một thể hiện thuộc về nhiều lớp (hoặc không có lớp nào) cùng một lúc.
+
+- 3 loại máy học:
++ Học có giám sát
+
++ Học không giám sát: Nhóm các mục tương tự để tạo thành "cụm" hoặc giảm dữ liệu thành một số lượng nhỏ "thuộc tính" quan trọng.
+Trực quan hóa dữ liệu cũng có thể được coi là học tập không giám sát.
+
++ Học tăng cường: Thường được sử dụng trong các tình huống mà một tác nhân AI như ô tô tự lái phải hoạt động trong một môi trường và có phản hồi về các lựa chọn tốt hay xấu với độ trễ nhất định.
+Cũng được sử dụng trong các trò chơi mà kết quả chỉ có thể được quyết định khi kết thúc trò chơi.
 
 _____________________ 2 _____________________
 
+- Học có giám sát
+Ngoài việc học cách dự đoán nhãn chính xác trong bài toán phân loại, học có giám sát cũng có thể được sử dụng trong các tình huống mà kết quả dự đoán là một con số.
 
+Ví dụ:
++ dự đoán số người sẽ nhấp vào quảng cáo của Google dựa trên nội dung quảng cáo và dữ liệu về hành vi trực tuyến trước đó của người dùng
++ dự đoán số vụ tai nạn giao thông dựa trên tình trạng đường xá và giới hạn tốc độ hoặc dự đoán giá bán bất động sản dựa trên về vị trí, kích thước và tình trạng của nó.
++ dự đoán giá nhà dựa trên kích thước nhà, số phòng ngủ, năm xây dựng, vị trí,...
+Những vấn đề này được gọi là hồi quy.
 
 _____________________ 3 _____________________
 
+! Những lưu ý
 
++ Nếu không cẩn thận, độ chính xác sẽ kém hơn mong đợi
++ Không chia tập dữ liệu thành 2 phần. Sử dụng dữ liệu đó làm dữ liệu huấn luyện và dữ liệu từ thực tế để đánh giá mô hình
+
+-> Học cách tránh overfitting và chọn một mô hình không quá hạn chế, cũng không quá linh hoạt, là một trong những kỹ năng cần thiết nhất của DS
 
 _____________________ 4 _____________________
 
+- Học không giám sát
 
+Các phương pháp học tập không giám sát điển hình cố gắng tìm hiểu một số loại "cấu trúc" bên dưới dữ liệu.
+Ví dụ như trực quan hóa nơi các vật phẩm giống nhau được đặt gần nhau và các vật phẩm khác nhau ở xa nhau hơn.
+Nó cũng có thể có nghĩa là phân cụm khi chúng tôi sử dụng dữ liệu để xác định các nhóm hoặc "cụm" các mục tương tự nhau nhưng khác với dữ liệu trong các cụm khác.
+
+Ví dụ: các chuỗi cửa hàng tạp hóa thu thập dữ liệu về hành vi mua sắm của khách hàng
+Để hiểu rõ hơn về khách hàng của mình, cửa hàng có thể trực quan hóa dữ liệu bằng biểu đồ trong đó mỗi khách hàng được biểu thị bằng một dấu chấm và những khách hàng có xu hướng mua cùng một sản phẩm được đặt gần nhau
+Ví dụ, 'những người đam mê thực phẩm tốt cho sức khỏe với ngân sách thấp', 'những người yêu thích sản phẩm cao cấp',...
 
 _____________________ 5 _____________________
 
-
+Một ví dụ khác về học tập không giám sát có thể được gọi là mô hình tổng quát (generative modeling.
+Điều này đã trở thành một cách tiếp cận nổi bật trong vài năm qua khi một kỹ thuật học sâu được gọi là GAN - Generative Adversarial Networks đã dẫn đến những tiến bộ vượt bậc.
+Với một số dữ liệu, chẳng hạn như ảnh chụp khuôn mặt của mọi người, một mô hình tổng quát có thể tạo ra nhiều dữ liệu giống nhau hơn: hình ảnh khuôn mặt của mọi người trông giống thật hơn nhưng nhân tạo hơn.
 
 _____________________ 6 _____________________
 
+2. The Nearest Neighbor Classifier - Hàng xóm gần nhất
 
++ Chọn điểm gần nhất và được thêm vào lớp chứa điểm đó
+
+** Định nghĩa "gần nhất"
+Sử dụng khoảng cách Euclid để quyết định mục nào gần nhất có thể không phải lúc nào cũng hợp lý
+Ví dụ: Đầu vào là văn bản, trong đó không rõ cách các mục được vẽ trong biểu diễn hình học và khoảng cách như thế nào.
+Do đó, nên chọn số liệu khoảng cách trên cơ sở từng trường hợp.
+
+Ví dụ: Tập hợp những người thích nghe nhạc pop. Khi có nhiều người nghe đi nghe lại 1 bài mới ra thì hệ thống sẽ đề xuất cho những người còn lại; khi có nhiều người không quan tâm đến 1 bài hát thì hệ thống không đề xuất cho những người còn lại
 
 _____________________ 7 _____________________
 
+3. Regression - Hồi quy
 
+Sự khác biệt giữa phân loại và hồi quy:
+Có một sự khác biệt nhỏ nhưng quan trọng trong loại dự đoán mà chúng ta nên đưa ra trong các tình huống khác nhau.
+
+Ví dụ:
++ trình phân loại hàng xóm gần nhất chọn nhãn lớp cho bất kỳ mục nào trong số các lựa chọn thay thế đã cho (như thư rác/hợp lệ hoặc 0,1,2,...,9)
++ hồi quy tuyến tính tạo ra một dự đoán số không phải là bị ràng buộc là một số nguyên (một số nguyên trái ngược với một cái gì đó như 3,14).
+
+Vì vậy, HỒI QUY tuyến tính PHÙ HỢP hơn trong các tình huống mà biến đầu ra có thể là bất kỳ CON SỐ nào như giá của sản phẩm, khoảng cách đến chướng ngại vật, doanh thu phòng vé của bộ phim Chiến tranh giữa các vì sao tiếp theo, v.v.
 
 _____________________ 8 _____________________
 
+Ý tưởng cơ bản trong hồi quy tuyến tính là "cộng tác động" của từng biến đặc trưng để tạo ra giá trị dự đoán.
+Thuật ngữ kỹ thuật cho "công tác động" là tổ hợp tuyến tính. Ý tưởng rất đơn giản và nó có thể được minh họa bằng hóa đơn mua sắm của bạn.
 
+Suy nghĩ về hồi quy tuyến tính như một hóa đơn mua sắm:
+Giả sử bạn đến cửa hàng tạp hóa và mua 2,5kg khoai tây, 1,0kg cà rốt và 2 chai sữa.
+Nếu giá khoai tây là 2€ mỗi kg, giá cà rốt là 4€ mỗi kg và một chai sữa là 3€
+Thì hóa đơn, do nhân viên thu ngân tính toán, tổng cộng là 2,5 × 2€ + 1,0 × 4€ + 2 × 3€ = 15€.
+Trong hồi quy tuyến tính, lượng khoai tây, cà rốt và sữa là đầu vào của dữ liệu. Đầu ra là chi phí mua sắm của bạn, điều này rõ ràng phụ thuộc vào cả giá cả và số lượng mỗi sản phẩm bạn mua.
+
++ "tuyến tính" có nghĩa là mức tăng đầu ra khi một đặc trưng đầu vào được tăng thêm một lượng cố định luôn giống nhau.
 
 _____________________ 9 _____________________
 
++ Trong thuật ngữ hồi quy tuyến tính, GIÁ của các sản phẩm khác nhau sẽ được gọi là HỆ SỐ hoặc TRỌNG SỐ.
+Một trong những ưu điểm chính của hồi quy tuyến tính là khả năng diễn giải dễ dàng của nó (trên thực tế, các trọng số đã học có thể thú vị hơn các dự đoán của kết quả đầu ra)
 
++ Trên thực tế, đầu ra không phải lúc nào cũng được xác định đầy đủ bởi đầu vào, do nhiều yếu tố gây ra sự không chắc chắn hoặc "nhiễu" trong quy trình.
+Ví dụ việc mua sắm tại một khu chợ nơi giá của bất kỳ sản phẩm nhất định nào có thể thay đổi theo thời gian.
+Trong những tình huống như vậy, có thể ước tính giá nhưng chỉ với một số độ chính xác hạn chế.
+
++ Tìm các trọng số tối ưu hóa sự trùng khớp giữa kết quả đầu ra được dự đoán và kết quả thực tế trong dữ liệu huấn luyện là một bài toán thống kê có thể dễ dàng giải quyết vấn đề này ngay cả đối với các tập dữ liệu lớn.
 
 _____________________ 10 _____________________
 
@@ -55,108 +125,6 @@ _____________________ 14 _____________________
 
 
 
-_____________________ 15 _____________________
-
-
-
-_____________________ 16 _____________________
-
-
-
-_____________________ 17 _____________________
-
-
-
-_____________________ 18 _____________________
-
-
-
-_____________________ 19 _____________________
-
-
-
-_____________________ 20 _____________________
-
-
-
-_____________________ 21 _____________________
-
-
-
-_____________________ 22 _____________________
-
-
-
-_____________________ 23 _____________________
-
-
-
-_____________________ 24 _____________________
-
-
-
-_____________________ 25 _____________________
-
-
-
-_____________________ 26 _____________________
-
-
-
-_____________________ 27 _____________________
-
-
-
-_____________________ 28 _____________________
-
-
-
-_____________________ 29 _____________________
-
-
-
-_____________________ 30 _____________________
-
-
-
-_____________________ 31 _____________________
-
-
-
-_____________________ 32 _____________________
-
-
-
-_____________________ 33 _____________________
-
-
-
-_____________________ 34 _____________________
-
-
-
-_____________________ 35 _____________________
-
-
-
-_____________________ 36 _____________________
-
-
-
-_____________________ 37 _____________________
-
-
-
-_____________________ 38 _____________________
-
-
-
-_____________________ 39 _____________________
-
-
-
-_____________________ 40 _____________________
-
-
+_____________________ End _____________________
 
 
