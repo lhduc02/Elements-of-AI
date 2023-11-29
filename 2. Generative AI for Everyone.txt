@@ -1,0 +1,197 @@
+Generative AI for Everyone
+_____________________ 1 _____________________
+
++ GenAI là những AI có khả năng tạo các text, hình ảnh, audio chất lượng cao
++ GenAI được xây dựng bởi Supervised learning
++ GenAI đoán từng từ có xác suất xuất hiện cao nhất trong câu
+
+_____________________ 2 _____________________
+
+- Ứng dụng của GenAI:
++ Writing:
+	Viết các yêu cầu (tuyển dụng, bài văn,...)
+	Dịch văn bản
+
++ Reading:
+	Tóm tắt văn bản (VD: khi sale nói chuyện với khách hàng, chuyển đổi âm thanh sang văn bản -> tóm tắt để xem khách hàng có gì chưa hài lòng)
+	Sửa lỗi chính tả
+
++ Chatting:
+	Chatbot
+	Voicebot
+
+_____________________ 3 _____________________
+
+- Những điều LLM có thể / không thể làm
+
+
+_____________________ 4 _____________________
+
+- Tips for prompting:
+
+
+_____________________ 5 _____________________
+
+- Image generation:
+
+
+_____________________ 6 _____________________
+
+	RAG
+
+Retrieval Augmented Generation (RAG): Truy xuất hệ tăng cường - một kỹ thuật cải thiện khả năng của Mô hình Ngôn ngữ Lớn (LLM) bằng cách tích hợp thêm kiến thức ngoài những gì chúng đã học từ các nguồn mở.
+Quá trình RAG bao gồm ba bước chính:
+
+1. Retrieval (Truy xuất): Với một câu hỏi (ví dụ: "Có bãi đậu xe cho nhân viên không?"), hệ thống tìm kiếm trong một bộ sưu tập các tài liệu để tìm ra tài liệu nào là phù hợp nhất. Điều này có thể bao gồm các văn bản về các chính sách phúc lợi, chính sách nghỉ phép, cơ sở vật chất hoặc quy trình thanh toán.
+
+2. Incorporation (Kết hợp): Tài liệu được truy xuất hoặc văn bản liên quan được tích hợp vào một prompt được cập nhật. Người trình bày tạo ra một prompt bằng cách cung cấp ngữ cảnh sử dụng các đoạn thông tin từ tài liệu truy xuất, tạo ra một prompt dài hơn bao gồm câu hỏi ban đầu và thông tin liên quan.
+
+3. Generation (Tạo ra): Prompt mở rộng sau đó được sử dụng để truy vấn LLM, cho phép nó tạo ra một câu trả lời thông minh hơn dựa trên ngữ cảnh đã truy xuất. Hi vọng rằng phương pháp này giúp LLM cung cấp những câu trả lời chính xác và có sẵn ngữ cảnh.
+
+** Tầm quan trọng của việc xem xét các hạn chế về độ dài của prompt và gợi ý rút trích phần quan trọng nhất của một tài liệu để tránh prompt quá dài.
+
+Nhiều ứng dụng của RAG được đề cập, bao gồm phần mềm cho phép người dùng tương tác với tệp PDF, chatbot trả lời câu hỏi dựa trên nội dung trang web và các công cụ tìm kiếm web mới tích hợp giao diện giống như chat. Người trình bày kết luận bằng cách khuyến khích chuyển đổi quan điểm, xem xét LLM không chỉ là kho thông tin mà còn là máy suy luận có khả năng xử lý và suy luận thông tin, từ đó mở rộng phạm vi ứng dụng.
+
+-> RAG là một kỹ thuật quan trọng cho nhiều ứng dụng và khuyến khích suy nghĩ về LLM như một máy suy luận chứ không chỉ là một kho thông tin.
+
+_____________________ 7 _____________________
+
+	Fine-tuning vs RAG
+
+1. Mục Tiêu Chính:
+RAG: Mục tiêu của RAG là cung cấp thông tin bổ sung cho mô hình bằng cách tích hợp thông tin từ nguồn dữ liệu bên ngoài và sử dụng nó để tạo ra văn bản phản hồi hoặc câu trả lời.
+Fine-tuning: Mục tiêu của fine-tuning là điều chỉnh hoặc cải thiện một mô hình đã được đào tạo trước đó trên một tập dữ liệu cụ thể để làm cho nó phù hợp hơn với một nhiệm vụ cụ thể.
+
+2. Phương Pháp:
+RAG: Sử dụng quy trình truy xuất thông tin từ nguồn dữ liệu và tích hợp vào quá trình sinh văn bản mới.
+Fine-tuning: Liên quan đến việc đào tạo lại mô hình trên một tập dữ liệu nhỏ hơn hoặc cụ thể để cải thiện hiệu suất trên một nhiệm vụ cụ thể.
+
+3. Áp Dụng:
+RAG: Thường được sử dụng khi cần cung cấp ngữ cảnh bổ sung hoặc thông tin từ nguồn dữ liệu bên ngoài, chẳng hạn như tìm kiếm câu trả lời trong các tài liệu hoặc văn bản khác nhau.
+Fine-tuning: Thường được sử dụng khi cần tinh chỉnh một mô hình đã có để làm cho nó phù hợp hơn với một ứng dụng hoặc tập dữ liệu cụ thể.
+
+4. Dữ Liệu:
+RAG: Sử dụng nguồn dữ liệu bổ sung để truy xuất thông tin.
+Fine-tuning: Sử dụng tập dữ liệu cụ thể để đào tạo lại mô hình.
+
+5. Khả Năng Tổng Quát Hóa:
+RAG: Có khả năng tổng quát hóa tốt hơn vì nó có thể sử dụng thông tin từ nhiều nguồn dữ liệu bên ngoài.
+Fine-tuning: Thường tập trung vào việc cải thiện hiệu suất trên một nhiệm vụ cụ thể, có thể giảm khả năng tổng quát hóa.
+
+6. Ưu Điểm và Hạn Chế:
+RAG: Tăng cường khả năng hiểu ngữ cảnh và thông tin bổ sung; tuy nhiên, có thể tăng độ phức tạp của quá trình và yêu cầu nhiều dữ liệu bổ sung.
+Fine-tuning: Hiệu quả khi cần tinh chỉnh mô hình cho một ứng dụng cụ thể, nhưng có thể đòi hỏi một lượng lớn dữ liệu đào tạo cụ thể cho nhiệm vụ.
+
+-> Cả hai kỹ thuật đều có vai trò quan trọng trong việc nâng cao khả năng của mô hình trong các tình huống cụ thể và ứng dụng khác nhau. Sự kết hợp của chúng có thể tạo ra mô hình có khả năng tổng quát cao và hiệu quả cho nhiều nhiệm vụ.
+
+_____________________ 8 _____________________
+
+Pre-traning là sử dụng LLM mà người khác đã đào tạo, sau đó fine-tuning lại theo dữ liệu của mình
+
+_____________________ 9 _____________________
+
+	Lựa chọn mô hình
+
+Nguyên tắc chọn mô hình ngôn ngữ (LLM) khi xây dựng ứng dụng phần mềm:
++ Nên coi kích thước mô hình là một chỉ số về khả năng, với các mô hình nhỏ hơn phù hợp với các nhiệm vụ khớp mẫu và kiến ​​thức cơ bản, còn các mô hình lớn hơn, chẳng hạn như các mô hình có hơn 100 tỷ tham số, sẽ tốt hơn cho các nhiệm vụ liên quan đến kiến ​​thức sâu hoặc lý luận phức tạp
++ Quyết định giữa các mô hình nguồn đóng và nguồn mở cũng được khám phá, nêu bật sự đánh đổi giữa việc khóa nhà cung cấp, kiểm soát và bảo mật dữ liệu.
+-> Nhấn mạnh bản chất thực nghiệm của việc phát triển LLM và khuyến nghị thử nghiệm nhiều mô hình để tìm ra mô hình phù hợp nhất cho ứng dụng.
+
+_____________________ 10 _____________________
+
+	Sử dụng giao diện web LLM hằng ngày
+
+- Vai trò của AI sáng tạo trong kinh doanh và tác động của nó đối với xã hội, đặc biệt là về vấn đề việc làm
++ Mọi người ở các vai trò công việc khác nhau có thể sử dụng giao diện web để truy cập AI tổng hợp cho các nhiệm vụ như hỗ trợ viết, động não, tóm tắt và thậm chí tạo bản nháp mã.
++ Khả năng ứng dụng rộng rãi của AI tổng hợp trong các ngành nghề khác nhau.
+Giới thiệu ý tưởng về một khung hệ thống để phân tích các doanh nghiệp nhằm xác định các cơ hội sử dụng AI tổng quát, bằng cách tăng cường hoặc tự động hóa, đồng thời thảo luận về giá trị tiềm năng của việc xây dựng hoặc mua các ứng dụng phần mềm dựa trên LLM.
+Nhìn chung, mục đích là khám phá những cách đa dạng mà AI có thể tạo ra có thể được tích hợp vào công việc hàng ngày của các tổ chức.
+
+_____________________ 11 _____________________
+
+	Phân tích các nhiệm vụ công việc trong doanh nghiệp nhằm xác định các cơ hội sử dụng AI tổng hợp.
+
++ Nhấn mạnh tầm quan trọng của việc xem AI không phải là tự động hóa toàn bộ công việc mà là tự động hóa các nhiệm vụ cụ thể trong công việc. + Ví dụ về đại diện dịch vụ khách hàng, khi chia nhỏ các nhiệm vụ và đánh giá tiềm năng của chúng trong việc tăng cường hoặc tự động hóa AI tổng quát.
++ Việc đánh giá xem xét tính khả thi về mặt kỹ thuật (AI có thể làm được không và với chi phí bao nhiêu) và giá trị kinh doanh (tiết kiệm thời gian, giảm chi phí và cải thiện quy trình làm việc).
++ Nên thử nghiệm các LLM để đánh giá tính khả thi về mặt kỹ thuật một cách nhanh chóng. Ngoài ra, cơ sở dữ liệu nghề nghiệp trực tuyến như Onet có thể cung cấp thông tin chuyên sâu về phân tích nhiệm vụ cho các vai trò công việc khác nhau.
+-> Nhấn mạnh sự chuyển đổi dần dần từ tăng cường sang tự động hóa khi niềm tin vào sản phẩm AI tổng hợp ngày càng tăng. Khung này được trình bày như một công cụ có giá trị cho các doanh nghiệp đang tìm cách tận dụng AI sáng tạo trong hoạt động của họ.
+
+_____________________ 12 _____________________
+
+	Ví dụ về phân tích công việc
+
+Tầm quan trọng của việc phân tích một cách có hệ thống các nhiệm vụ trong vai trò công việc để xác định các cơ hội cho AI có khả năng tạo ra. 
+Trái ngược với bản năng tập trung vào nhiệm vụ mang tính biểu tượng nhất của công việc, cơ hội tốt nhất cho AI có thể nằm ở những nhiệm vụ khác ít rõ ràng hơn. Các ví dụ bao gồm các lập trình viên máy tính, trong đó việc viết tài liệu có thể dễ dàng hơn đối với AI tạo ra hơn là tự viết mã.
+Các luật sư có thể nhận thấy tiềm năng cao trong việc hỗ trợ AI trong việc soạn thảo các tài liệu pháp lý và giải thích luật, thay vì tự động hóa việc đại diện tại tòa án.
+Mở rộng sang các vai trò công việc khác nhau, chẳng hạn như cảnh quan, trong đó một số nhiệm vụ có thể có tiềm năng tạo ra AI thấp. Video nhấn mạnh sự cần thiết phải phân tích toàn diện các nhiệm vụ trong vai trò công việc và khuyến khích người xem suy nghĩ về cách AI có thể tạo ra có thể hỗ trợ các nhiệm vụ khác nhau trong công việc hoặc doanh nghiệp của họ. Ngoài ra, diễn giả nhấn mạnh rằng mặc dù tiết kiệm chi phí là vấn đề được nhiều người quan tâm nhưng tiềm năng biến đổi của AI sáng tạo nằm ở việc xem xét lại quy trình làm việc để tăng doanh thu và cải thiện dịch vụ khách hàng.
+
+_____________________ 13 _____________________
+
+	Quy trình công việc mới và cơ hội mới
+
++ AI tổng hợp góp phần tăng trưởng doanh thu, ngoài việc tiết kiệm chi phí bằng cách AI tổng hợp có thể hợp lý hóa các nhiệm vụ cho các chuyên gia như bác sĩ phẫu thuật, luật sư và nhà tiếp thị, giúp tăng hiệu quả và cải thiện quy trình làm việc.
+Việc tái thiết kế quy trình công việc được nhấn mạnh là kết quả chung khi tích hợp AI tổng quát, nhấn mạnh sự cần thiết phải suy nghĩ lại về trình tự nhiệm vụ để có kết quả tối ưu.
++ Phân tích và giải quyết các nhiệm vụ của khách hàng để xác định cơ hội tăng trưởng. Các doanh nghiệp nên xem xét cách AI tổng hợp có thể hỗ trợ khách hàng trong các nhiệm vụ của họ, dẫn đến việc tạo ra các sản phẩm hoặc dịch vụ mới. Nhìn chung, video cung cấp các khuôn khổ để động não và nêu bật những cách khác nhau mà AI có thể tạo ra có thể tạo ra giá trị và thúc đẩy tăng trưởng.
+
+_____________________ 14 _____________________
+
+	Các nhóm xây dựng phần mềm AI sáng tạo
+
+Phương pháp để xây dựng các ứng dụng AI tổng quát và phác thảo các cấu trúc nhóm điển hình cho các dự án đó:
++ Các vai trò phổ biến nhất bao gồm
+		kỹ sư phần mềm chịu trách nhiệm viết ứng dụng
+		kỹ sư máy học triển khai hệ thống AI
+		đôi khi là người quản lý sản phẩm giám sát phạm vi dự án và mức độ hữu ích của khách hàng.
+
+Bắt đầu với một nhóm nhỏ là điều phổ biến, với các khả năng từ nhóm một người thử nghiệm LLM đến nhóm hai người, thường có sự tham gia của một kỹ sư máy học và một kỹ sư phần mềm. Các nhóm lớn hơn có thể bao gồm các vai trò bổ sung như kỹ sư dữ liệu, nhà khoa học dữ liệu, người quản lý dự án hoặc nhà nghiên cứu máy học.
+-> AI sáng tạo đã hạ thấp rào cản việc xây dựng các ứng dụng dựa trên AI, khuyến khích các nhóm tạo nguyên mẫu và thử nghiệm các ý tưởng.
+
+_____________________ 15 _____________________
+
+	Tiềm năng tự động hóa trên các lĩnh vực
+
+1. Nghiên cứu của Eloundou: Nghiên cứu này tiết lộ rằng những công việc có mức lương cao hơn dễ tiếp xúc với việc tăng cường hoặc tự động hóa AI hơn so với những công việc có mức lương thấp hơn. AI sáng tạo, đặc biệt là các mô hình ngôn ngữ lớn, đang tác động đến những nghề có mức lương cao hơn trong làn sóng tự động hóa này.
+
+2. Phân tích của McKinsey theo vai trò chức năng và ngành: Phân tích tác động của AI tổng hợp theo vai trò chức năng (ví dụ: bán hàng, tiếp thị, hoạt động khách hàng) và các ngành công nghiệp.
+
+3. Tác động theo ngành: Biểu đồ minh họa tác động ước tính của AI tổng hợp đối với các lĩnh vực công nghiệp khác nhau, bao gồm giáo dục và đào tạo lực lượng lao động, ngành nghề kinh doanh và pháp lý, chuyên gia STEM, v.v.
+
+Những người tạo ra giá trị chủ yếu thông qua: kiến ​​thức, chuyên môn, tư duy phản biện và kỹ năng giao tiếp cá nhân.
+
+_____________________ 16 _____________________
+
+	Những mối quan tâm và lo lắng liên quan đến AI tạo sinh:
+
+1. Khuếch đại các xung lực tiêu cực: Có mối lo ngại rằng AI có tính tổng quát, đặc biệt là các mô hình ngôn ngữ lớn (LLM), có thể khuếch đại các tiêu cực đến mọi người. LLM được đào tạo về văn bản trên internet, phản ánh cả khía cạnh tích cực và tiêu cực trong hành vi của con người, bao gồm cả định kiến ​​và thành kiến. Điều này có thể dẫn đến kết quả đầu ra sai lệch. Tuy nhiên, các kỹ thuật như tinh chỉnh và học tăng cường từ phản hồi của con người (RLHF) đang làm cho LLM ít sai lệch hơn theo thời gian.
+
+2. Dịch chuyển công việc: Có mối lo ngại rộng rãi về việc dịch chuyển công việc vì AI có thể thực hiện các nhiệm vụ nhanh hơn và rẻ hơn con người. Ví dụ về X quang được sử dụng để minh họa rằng mặc dù AI có thể tăng cường các nhiệm vụ nhưng nó không thay thế hoàn toàn vai trò của con người. AI được coi là công cụ nâng cao năng lực của con người và các ngành công nghiệp áp dụng AI có khả năng phát triển mạnh.
+
+3. Rủi ro hiện sinh: Một số người bày tỏ lo ngại rằng AI có thể gây ra rủi ro hiện hữu cho nhân loại. Những mối lo ngại bao gồm những kẻ xấu sử dụng AI cho mục đích phá hoại hoặc AI vô tình đẩy loài người đến bờ tuyệt chủng. Tuy nhiên, những lo ngại này thiếu bằng chứng cụ thể. Nhân loại có kinh nghiệm kiểm soát các thực thể mạnh mẽ và AI, giống như các công nghệ khác, có thể được học và điều chỉnh để đảm bảo an toàn.
+
+4. Trí tuệ tổng hợp nhân tạo (AGI): Sự không chắc chắn về thời điểm AI sẽ đạt được AGI, khả năng thực hiện bất kỳ nhiệm vụ trí tuệ nào mà con người có thể, góp phần gây ra mối lo ngại. AGI khó dự đoán, nhưng những tiến bộ của AI, khi được sử dụng một cách có trách nhiệm, có thể góp phần tích cực vào việc giải quyết các thách thức như biến đổi khí hậu và đại dịch.
+
+-> Nhấn mạnh những cải tiến liên tục về an toàn AI và niềm tin rằng AI làm tăng khả năng nhân loại sống sót và phát triển trong tương lai.
+
+_____________________ 17 _____________________
+
+	Artificial General Intelligence (AGI)
+
++ Trí tuệ nhân tạo tổng hợp (AGI) được khám phá, làm rõ rằng mặc dù AI là công nghệ có mục đích chung nhưng AGI đặc biệt đề cập đến AI có khả năng thực hiện bất kỳ nhiệm vụ trí tuệ nào mà con người có thể làm được. Định nghĩa kỹ thuật bao gồm các nhiệm vụ như học lái xe ô tô, hoàn thành nghiên cứu cấp tiến sĩ hoặc thực hiện nhiệm vụ của một lập trình viên máy tính.
+
++ Còn nhiều thập kỷ nữa mới đạt được điều đó. Có đề cập đến việc một số doanh nghiệp đưa ra dự báo lạc quan hơn, nhưng nên thận trọng do có thể có những khác biệt trong định nghĩa về AGI.
+
++ Các LLM được nêu bật như những công cụ có thể được sử dụng làm công cụ suy luận, cung cấp cái nhìn thoáng qua về những gì AGI có thể đòi hỏi. Bất chấp những tiến bộ, việc đạt được AGI đòi hỏi những đột phá kỹ thuật đáng kể. Khó khăn nằm ở việc so sánh AI với trí thông minh của con người, vì AI đã phát triển khác biệt, học hỏi từ lượng dữ liệu khổng lồ nhưng vẫn phải đối mặt với những thách thức trong việc thực hiện tất cả các nhiệm vụ trí tuệ.
+
+Video kết thúc bằng cách nhấn mạnh nhu cầu sử dụng AI có trách nhiệm, mở đường cho cuộc thảo luận về chủ đề này trong video tiếp theo.
+
+_____________________ 18 _____________________
+
+	Responsible AI (AI có trách nhiệm)
+
++ AI có trách nhiệm được thảo luận, nhấn mạnh tầm quan trọng của việc phát triển và sử dụng AI theo những cách có đạo đức, đáng tin cậy và có trách nhiệm với xã hội. Mặc dù đã đạt được những tiến bộ đáng kể trong những năm gần đây nhưng vẫn còn những thách thức và các chủ đề chung trong việc triển khai AI có trách nhiệm bao gồm sự công bằng, minh bạch, quyền riêng tư, bảo mật và sử dụng có đạo đức.
+
++ Các mẹo để áp dụng các phương pháp thực hành AI có trách nhiệm, chẳng hạn như xây dựng văn hóa khuyến khích thảo luận và tranh luận về các vấn đề đạo đức, động não các vấn đề tiềm ẩn và làm việc với các nhóm đa dạng để xem xét các quan điểm khác nhau. Các phương pháp hay nhất dành riêng cho từng ngành cũng được nêu bật và diễn giả khuyến khích xem xét các nguyên tắc AI có trách nhiệm khi quyết định theo đuổi dự án nào.
+
+-> Ưu tiên các cân nhắc về mặt đạo đức trong các dự án AI.
+
+_____________________ End _____________________
